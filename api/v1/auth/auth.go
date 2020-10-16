@@ -1,8 +1,8 @@
 package auth
 
 import (
-	"template/internal/config"
-	"template/internal/store"
+	"github.com/jamesnyakush/frika/internal/config"
+	"github.com/jamesnyakush/frika/internal/store"
 )
 
 type Resource struct {

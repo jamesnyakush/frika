@@ -1,6 +1,6 @@
 package store
 
-import "template/internal/store/model"
+import "github.com/jamesnyakush/frika/internal/store/model"
 
 type Store interface {
 	User() UserStore
