@@ -3,14 +3,14 @@ package config
 import (
 	"errors"
 	"fmt"
+	"github.com/jamesnyakush/frika/internal/store"
 	"log"
-	"template/internal/store"
 )
 
 // Config is a struct for our Configuration Files
 type Config struct {
 
-	//BaseURL fupisha's fully qualified domain name.
+	//BaseURL  fully qualified domain name.
 	BaseURL string `envconfig:"FRIKA_BASE_URL"`
 	//Title name of the application e.g. Frika.
 	Title string `envconfig:"FRIKA_TITLE"`

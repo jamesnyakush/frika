@@ -7,7 +7,7 @@ type Store interface {
 }
 
 type UserStore interface {
-	New(name, email, password string)
+	New(name, email, password string) (model.User, error)
 	Get(id string) (model.User, error)
 	GetByEmail(email string) (model.User, error)
 	SetAPIKey(id string, key int) (model.User, error)
